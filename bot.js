@@ -34,7 +34,7 @@ const client = new Discord.Client({disableEveryone: true});
 
 const request = require('request');
 
-const prefix = 'A'
+const prefix = 'S'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -47,7 +47,7 @@ client.on('ready', () => {
 
   client.on("guildMemberAdd", member => {
     member.createDM().then(function (channel) {
-    return channel.send(`**Welcome To iiAhmed_Hero Server** :beers: 
+    return channel.send(`**Welcome To ShaherAhly2005 Server** :beers: 
     **Enjoy** :beers: 
 [ ${member} ]`) 
   }).catch(console.error)
@@ -61,7 +61,7 @@ client.on('ready', () => {
 
       client.on('message',function(message) {
         if (message.author.bot) return;
-      var prefix = "A";
+      var prefix = "S";
                         if(!message.channel.guild) return;
       
                           if (message.content === prefix + "fm") {
@@ -80,7 +80,7 @@ client.on('ready', () => {
             });  
 
      client.on('message', message => {
-                    var prefix = "A";
+                    var prefix = "S";
                            if(message.content === prefix + "mc") {
                                                if(!message.channel.guild) return message.reply('** This command only for servers**');
                     
@@ -165,7 +165,7 @@ function forEachObject(obj, func) {
 client.on("ready", () => {
     var guild;
     while (!guild)
-        guild = client.guilds.get("483278789149851649")
+        guild = client.guilds.get("595976445592076292")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -185,7 +185,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('made it till here!');
     var guild;
     while (!guild)
-        guild = client.guilds.get("483278789149851649")
+        guild = client.guilds.get("595976445592076292")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -203,7 +203,7 @@ client.on("guildMemberAdd", (member) => {
 
 client.on('guildMemberAdd', member => {
 
-    const channel = member.guild.channels.find('name', '❰•『welcome』•❱');
+    const channel = member.guild.channels.find('name', 'chatt');
   
     const millis = new Date().getTime() - member.user.createdAt.getTime();
     const now = new Date();
@@ -865,7 +865,7 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
 });
 
 client.on('message', message => {
-  var prefix = "A";
+  var prefix = "S";
   if (message.author.omar) return;
   if (!message.content.startsWith(prefix)) return;
   var command = message.content.split(" ")[0];
@@ -932,7 +932,7 @@ client.on('message',function(message) {
        if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return message.channel.send(' Error : I Don’t Have `` MANAGE_ROLES ``Permission ');
        if(!muteMember) return message.channel.send(' Error : ``Mention a User``').then(message => message.delete(4000))
        if(!muteReason) return message.channel.send(' Error : ``Supply a Reason``').then(message => message.delete(4000))
-       if(!muteDuration) return message.channel.send(' Error : `` Supply Mute Time `` \n Ex: #mute @DaRKNighT reason 1m ').then(message => message.delete(4000))
+       if(!muteDuration) return message.channel.send(' Error : `` Supply Mute Time `` \n Ex: #mute @ShaherAhly2005 reason 1m ').then(message => message.delete(4000))
        if(!muteDuration.match(/[1-7][s,m,h,d,w]/g)) return message.channel.send(' Error : `` Invalid Mute Duration``').then(message => message.delete(4000))
        message.channel.send(`${muteMember} Has Been Muted.`).then(message => message.delete(5000))
        muteMember.addRole(muteRole);
@@ -1042,7 +1042,7 @@ client.on("message", message => {
     })
     
 client.on('message', message => {
-var prefix = "A" // برفكس حقك هني
+var prefix = "S" // برفكس حقك هني
            if (message.content.startsWith(prefix + "id")) {
      var args = message.content.split(" ").slice(1);
      let user = message.mentions.users.first();
@@ -1072,7 +1072,7 @@ var prefix = "A" // برفكس حقك هني
 }       });
 
 client.on('message', message => {
-var prefix = "A" // البريفكس
+var prefix = "S" // البريفكس
 if(message.content.startsWith(prefix +"server")){ // الامر
   if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return message.reply(`**هذه الخاصية للادارة فقط** ❎ `)
 if(!message.channel.guild) return message.reply(' ');
@@ -1110,35 +1110,35 @@ client.on("message", message => {
          .setFooter('Reqused By : ' + message.author.username, message.author.avatarURL)
 	 .setTimestamp()
          .setDescription(`**• Puplic - عام •
-Aavatar ( صوره الشخصيه )
-Ahelp ( عرض قائمه المساعده )
-Acount ( لعرض عدد الاعضاء )
-Aid ( عرض معلومات الشخصيه )
-Afm ( لعرض حالت الاعضاء )
-Aping ( لعرض سرعه النت تبعك )
-Aavatar ( لعرض صوره حسابك )
-Aprofile ( لازهار البروفايل حقك )
+Savatar ( صوره الشخصيه )
+Shelp ( عرض قائمه المساعده )
+Scount ( لعرض عدد الاعضاء )
+Sid ( عرض معلومات الشخصيه )
+Sfm ( لعرض حالت الاعضاء )
+Sping ( لعرض سرعه النت تبعك )
+Savatar ( لعرض صوره حسابك )
+Sprofile ( لازهار البروفايل حقك )
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 • Staff - الاداره •
-Aban ( حظر الشخصيه )
-Akick ( طرد الشخصيه )
-Amute ( اسكات الشخصيه )
-Aunmute ( فك الاسكات من الشخصيه )
-Aclear ( مسح رسائل المخادثه )
-Aserver ( عرض معلومات السيرفر )
-Amove ( سحب العضو لرومك الصوتي )
-Asetcount ( لصنع روم عدد الاعضاء )
-Asetvoice ( لصنع روم عدد الاعضاء الي في الرومات )
-Abc ( لارسال بردكاست بمنشن )
-Abbc ( لارسال بردكاست بدون منشن )
-Amc ( لقفل روم كتابه )
-Aumc ( لفتح روم كتابه )
-Aautorole ( لتفعيل الاوتو رول )
-Arole ( لاعطاء رتبه )
-Aclear ( لمسح لشات )
-Aclear <num> ( لمسح الشات بعدد )
+Sban ( حظر الشخصيه )
+Skick ( طرد الشخصيه )
+Smute ( اسكات الشخصيه )
+Sunmute ( فك الاسكات من الشخصيه )
+Sclear ( مسح رسائل المخادثه )
+Sserver ( عرض معلومات السيرفر )
+Smove ( سحب العضو لرومك الصوتي )
+Ssetcount ( لصنع روم عدد الاعضاء )
+Ssetvoice ( لصنع روم عدد الاعضاء الي في الرومات )
+Sbc ( لارسال بردكاست بمنشن )
+Sbbc ( لارسال بردكاست بدون منشن )
+Smc ( لقفل روم كتابه )
+Sumc ( لفتح روم كتابه )
+Sautorole ( لتفعيل الاوتو رول )
+Srole ( لاعطاء رتبه )
+Sclear ( لمسح لشات )
+Sclear <num> ( لمسح الشات بعدد )
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-Devloped By <@463093557926952980>
+Devloped By <@580199286382395433>
 **`)
    message.channel.send(e).then(m => m.delete(5000))
    message.author.sendEmbed(embed)
@@ -1166,11 +1166,11 @@ client.on("message", async function(msg) {
     if (msg.channel.type !== "text") return undefined;
     else {
         var args = msg.content.toLowerCase().split(" ");
-        if (args[0].slice(prefix.length) === "clear") {//The code created by @L#7574
+        if (args[0].slice(prefix.length) === "clear") {//The code created by @Sha Her#5490
             if (isNaN(args[1]) && args[1]) return msg.channel.send("Use numbers man ,_,");
             if (!msg.guild.member(client.user)) return msg.channel.send('Missing manage messages permission!');
             if (!msg.member.hasPermission("MANAGE_MESSAGES")) return msg.channel.send("You're missing manage messages permission!");
-            else {//The code created by @L#7574
+            else {//The code created by @Sha Her#5490
                 if (args[1] || !args[1]) {
                     await msg.channel.fetchMessages().then(async msgs => {
                         var word;
@@ -1207,13 +1207,13 @@ client.on("message", async function(msg) {
             }
         }
     }
-});//The code created by @RG , Sha Her#2199
+});//The code created by @Sha Her#5490
 
 client.on("message", message => {
     let roleembed1 = new Discord.RichEmbed()
     .setDescription(`
     أمثله على الأوامر :
-    $role @RG , Sha Her rolename : لسحب رتبة لعضو معين
+    $role @Sha Her rolename : لسحب رتبة لعضو معين
     $role all rolename : لسحب رتبة للجميع
     $role humans rolename : لسحب رتبة للاشخاص فقط
     $role bots rolename : لسحب رتبة لجميع البوتات`)
