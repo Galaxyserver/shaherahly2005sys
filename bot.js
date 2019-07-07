@@ -174,7 +174,7 @@ client.on("ready", () => {
     })
 })
 client.on("guildMemberAdd", (member) => {
-    let channel = member.guild.channels.find('name', "・discord");
+    let channel = member.guild.channels.find('name', "chatt");
     if (!channel) {
         console.log("!channel fails");
         return;
