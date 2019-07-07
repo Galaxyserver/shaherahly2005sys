@@ -38,7 +38,7 @@ const prefix = 'S'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setGame(`Ahelp|iiAhmed_Hero  .`,'https://www.twitch.tv/v5bz');
+	client.user.setGame(`Shelp|ShaherAhly2005 Server .`,'https://www.twitch.tv/v5bz');
 });
 
 
